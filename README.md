@@ -43,9 +43,6 @@ L'API utilisée : `https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api`
 - Pagination complète : boutons **first**, **prev**, **next**, **last**
 - Stockage de la page courante et navigation via les liens de pagination (`links.next`, `links.prev`, etc.)
 
-### Exercice 5 — Affichage d'une photo au clic
-- Clic sur une vignette → affichage de la photo complète avec catégorie et commentaires
-- Mise à jour du hash URL pour permettre le partage direct d'une photo
 
 ---
 
@@ -79,9 +76,6 @@ TD7/
 npm install
 npm run dev
 ```
-
-> ⚠️ L'API requiert une authentification HTTP depuis un réseau extérieur à l'IUT.
-> Activer le VPN @etu ou s'assurer que l'option `credentials: 'include'` est bien présente dans les requêtes fetch.
 
 ---
 
