@@ -1,0 +1,54 @@
+/* ===== Photo ===== */
+img {
+    max-width: 30rem;
+    height: auto;
+}
+
+#photo {
+    margin-bottom: 2rem;
+}
+
+/* ===== Galerie : navigation ===== */
+#galerie {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+#galerie_nav {
+    margin-bottom: 1rem;
+}
+
+#galerie_nav button {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+}
+
+/* ===== Galerie : vignettes ===== */
+#la_galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#la_galerie figure {
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+#la_galerie figure img {
+    max-width: 12rem;
+    height: auto;
+    display: block;
+}
+
+#la_galerie figure figcaption {
+    font-size: 0.8rem;
+    color: #555;
+    max-width: 12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

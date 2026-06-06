@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TD7 – Photobox : fetch &amp; promesses</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ===== Exercice 1 : Affichage d'une photo ===== -->
+<main id="photo">
+  <h1>Photo : 105</h1>
+
+  <section id="la_photo">
+    <img src="">
+    <h4>titre</h4>
+    <p>description</p>
+    <p>type, defX x defY</p>
+    <h4 id="la_categorie">categorie : categorie de l'image</h4>
+    <h4>commentaires : </h4>
+    <ul id="les_commentaires">
+      <li>pseudo : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, vitae.</li>
+      <li>pseudo : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, recusandae.</li>
+    </ul>
+  </section>
+</main>
+
+<!-- ===== Exercice 2 & 3 : Galerie ===== -->
+<section id="galerie">
+  <nav id="galerie_nav">
+    <button id="btn_first">first</button>
+    <button id="btn_prev">prev</button>
+    <button id="btn_galerie">galerie</button>
+    <button id="btn_next">next</button>
+    <button id="btn_last">last</button>
+  </nav>
+  <div id="la_galerie"></div>
+</section>
+
+<!-- Template Handlebars pour l'affichage d'une photo -->
+<script id="photoTemplate" type="text/x-handlebars-template">
+  <img src="{{photoUrl}}" alt="{{titre}}">
+  <h4>{{titre}}</h4>
+  <p>{{description}}</p>
+  <p>{{type}}, {{width}} x {{height}}</p>
+  <h4 id="la_categorie">categorie : </h4>
+  <h4>commentaires : </h4>
+  <ul id="les_commentaires">
+  </ul>
+</script>
+
+<script src='js/index.js' defer></script>
+</body>
+</html>
